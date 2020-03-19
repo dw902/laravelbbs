@@ -12,6 +12,7 @@ class Authenticate extends Middleware
      * @param  \Illuminate\Http\Request  $request
      * @return string|null
      */
+//    定义失败后的跳转地址
     protected function redirectTo($request)
     {
         if (! $request->expectsJson()) {
