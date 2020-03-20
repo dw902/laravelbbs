@@ -15,8 +15,13 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
+//        上边为事件 下边为监听器两者实现耦合
         Registered::class => [
             SendEmailVerificationNotification::class,
+        ],
+//        查看VerifiesEmails源码发现这里触发了已经验证事件但是没有事件监听处理所以此处进行验证
+        \Illuminate\Auth\Events\Verified::class => [
+            \App\Listeners\EmailVerified::class,
         ],
     ];
 
