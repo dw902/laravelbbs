@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\User;
 //表单请求验证
 use App\Http\Requests\UserRequest;
+//使用这个工具类
+use App\Handlers\ImageUploadHandler;
 class UsersController extends Controller
 {
     //使用注入的方式进行
@@ -18,9 +20,20 @@ class UsersController extends Controller
     {
         return view('users.edit', compact('user'));
     }
-    public function update(UserRequest $request, User $user)
+    public function update(UserRequest $request, ImageUploadHandler $uploader, User $user)
     {
-        $user->update($request->all());
+        $data = $request->all();
+
+        if ($request->avatar) {
+//            用户id为前缀save每次只保存一张图片
+            $result = $uploader->save($request->avatar, 'avatars', $user->id);
+            if ($result) {
+//                通过工具类函数返回图片的地址
+                $data['avatar'] = $result['path'];
+            }
+        }
+
+        $user->update($data);
         return redirect()->route('users.show', $user->id)->with('success', '个人资料更新成功！');
     }
 }
