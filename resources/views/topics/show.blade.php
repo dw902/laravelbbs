@@ -40,6 +40,7 @@
                     </div>
 
                     <div class="topic-body mt-4 mb-4">
+{{--                        表示显示不转义的html--}}
                         {!! $topic->body !!}
                     </div>
 
