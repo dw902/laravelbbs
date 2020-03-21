@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
+use App\Models\User;
 //表单请求验证
 use App\Http\Requests\UserRequest;
 //使用这个工具类
