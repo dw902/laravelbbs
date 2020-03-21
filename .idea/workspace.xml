@@ -2,15 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4415c632-a80c-499e-94a6-5993de6f0ca3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/css/editor.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/fonticon.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/simditor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/simditor.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/hotkeys.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/hotkeys.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/module.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/simditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/simditor.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/uploader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/uploader.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/editor/css/editor.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/editor/css/fonticon.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/editor/css/simditor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/editor/css/simditor.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/editor/js/hotkeys.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/editor/js/hotkeys.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/editor/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/editor/js/module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/editor/js/module.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/editor/js/simditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/editor/js/simditor.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/editor/js/uploader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/editor/js/uploader.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TopicsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TopicsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/TopicRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/TopicRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Topic.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Topic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Observers/TopicObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/TopicObserver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/topics/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/topics/_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/topics/create_and_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/topics/create_and_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +195,7 @@
       <workItem from="1584582437904" duration="12037000" />
       <workItem from="1584626056830" duration="2210000" />
       <workItem from="1584662745070" duration="13565000" />
-      <workItem from="1584753286036" duration="16401000" />
+      <workItem from="1584753286036" duration="17617000" />
     </task>
     <servers />
   </component>

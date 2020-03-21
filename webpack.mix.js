@@ -11,6 +11,12 @@ const mix = require('laravel-mix');
  |
  */
 
+// mix.js('resources/js/app.js', 'public/js')
+//     .sass('resources/sass/app.scss', 'public/css').version();
+// //上边的。version是我们增加的这样更改样式就直接有作用了
+
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css').version();
-//上边的。version是我们增加的这样更改样式就直接有作用了
+    .sass('resources/sass/app.scss', 'public/css')
+    .version()
+    .copyDirectory('resources/editor/js', 'public/js')
+    .copyDirectory('resources/editor/css', 'public/css');
