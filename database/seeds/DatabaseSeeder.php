@@ -11,7 +11,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+//        所有的一起执行而且按照顺序
          $this->call(UsersTableSeeder::class);
-		$this->call(TopicsTableSeeder::class);
+        $this->call(TopicsTableSeeder::class);
+		$this->call(RepliesTableSeeder::class);
+
     }
 }
