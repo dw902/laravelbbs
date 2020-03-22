@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4415c632-a80c-499e-94a6-5993de6f0ca3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/NotificationsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/notifications/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/notifications/types/_topic_replied.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RepliesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RepliesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Topic.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Topic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Observers/ReplyObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/ReplyObserver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Observers/TopicObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/TopicObserver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/ReplyPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/ReplyPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/topics/_reply_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/topics/_reply_list.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +181,8 @@
       <workItem from="1584582437904" duration="12037000" />
       <workItem from="1584626056830" duration="2210000" />
       <workItem from="1584662745070" duration="13565000" />
-      <workItem from="1584753286036" duration="32397000" />
+      <workItem from="1584753286036" duration="33487000" />
+      <workItem from="1584920975559" duration="242000" />
     </task>
     <servers />
   </component>
@@ -196,7 +194,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -218,10 +218,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="776" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584854946501" />
-    <state x="636" y="119" width="786" height="801" key="find.popup" timestamp="1584870488975">
+    <state x="636" y="119" width="786" height="801" key="find.popup" timestamp="1584918113595">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="636" y="119" width="786" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584870488975" />
+    <state x="636" y="119" width="786" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584918113595" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
