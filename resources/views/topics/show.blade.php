@@ -26,7 +26,7 @@
         </div>
 
         <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 topic-content">
-            <div class="card ">
+            <div class="card">
                 <div class="card-body">
                     <h1 class="text-center mt-3 mb-3">
                         {{ $topic->title }}
@@ -40,20 +40,9 @@
                     </div>
 
                     <div class="topic-body mt-4 mb-4">
-{{--                        表示显示不转义的html--}}
                         {!! $topic->body !!}
                     </div>
 
-{{--                    <div class="operate">--}}
-{{--                        <hr>--}}
-{{--                        <a href="{{ route('topics.edit', $topic->id) }}" class="btn btn-outline-secondary btn-sm" role="button">--}}
-{{--                            <i class="far fa-edit"></i> 编辑--}}
-{{--                        </a>--}}
-{{--                        <a href="#" class="btn btn-outline-secondary btn-sm" role="button">--}}
-{{--                            <i class="far fa-trash-alt"></i> 删除--}}
-{{--                        </a>--}}
-{{--                    </div>--}}
-{{--                    权限判断是否可以删除与更新同权限--}}
                     @can('update', $topic)
                         <div class="operate">
                             <hr>
@@ -74,6 +63,16 @@
 
                 </div>
             </div>
+
+            {{-- 用户回复列表 --}}
+            <div class="card topic-reply mt-4">
+                <div class="card-body">
+                    @include('topics._reply_box', ['topic' => $topic])
+
+                    @include('topics._reply_list', ['replies' => $topic->replies()->with('user')->get()])
+                </div>
+            </div>
+
         </div>
     </div>
 @stop

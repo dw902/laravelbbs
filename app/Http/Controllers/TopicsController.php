@@ -26,7 +26,7 @@ class TopicsController extends Controller
     {
 //        定义了排序定义了作用域在model中则这里调用定义with则为防止n+1问题
         $topics = $topic->withOrder($request->order)
-            ->with('user', 'category')  // 预加载防止 N+1 问题
+            ->with('user', 'category','replies')  // 预加载防止 N+1 问题
             ->paginate(20);
         return view('topics.index', compact('topics'));
     }
