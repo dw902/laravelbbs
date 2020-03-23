@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4415c632-a80c-499e-94a6-5993de6f0ca3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/administrator/permissions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/administrator/roles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/administrator/categories.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/administrator/replies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/administrator/topics.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/administrator.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/administrator.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -184,7 +186,7 @@
       <workItem from="1584662745070" duration="13565000" />
       <workItem from="1584753286036" duration="33487000" />
       <workItem from="1584920975559" duration="5092000" />
-      <workItem from="1584967958870" duration="1045000" />
+      <workItem from="1584967958870" duration="1728000" />
     </task>
     <servers />
   </component>
