@@ -21,6 +21,9 @@ class User extends Authenticatable implements MustVerifyEmailContract
     use Notifiable {
         notify as protected laravelNotify;
     }
+    protected $fillable = [
+        'name', 'phone', 'email', 'password', 'introduction', 'avatar',
+    ];
     public function setAvatarAttribute($path)
     {
         // 如果不是 `http` 子串开头，那就是从后台上传的，需要补全 URL
@@ -58,9 +61,9 @@ class User extends Authenticatable implements MustVerifyEmailContract
 //        git@github.com:dw902/laravelbbs.git
     }
 
-    protected $fillable = [
-        'name', 'email', 'password','introduction','avatar',
-    ];
+//    protected $fillable = [
+//        'name', 'email', 'password','introduction','avatar',
+//    ];
 
     protected $hidden = [
         'password', 'remember_token',
