@@ -55,6 +55,7 @@ class User extends Authenticatable implements MustVerifyEmailContract
         }
 
         $this->laravelNotify($instance);
+//        git@github.com:dw902/laravelbbs.git
     }
 
     protected $fillable = [

@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4415c632-a80c-499e-94a6-5993de6f0ca3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/administrator/settings/site.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/administrator_settings/site.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/AcceptHeader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_23_220046_add_references.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/permission_denied.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Observers/UserObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/UserObserver.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/administrator.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/administrator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/administrator/permissions.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/administrator/permissions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +192,8 @@
       <workItem from="1584662745070" duration="13565000" />
       <workItem from="1584753286036" duration="33487000" />
       <workItem from="1584920975559" duration="5092000" />
-      <workItem from="1584967958870" duration="2452000" />
+      <workItem from="1584967958870" duration="5625000" />
+      <workItem from="1585005650335" duration="2855000" />
     </task>
     <servers />
   </component>

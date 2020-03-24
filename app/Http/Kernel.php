@@ -40,6 +40,8 @@ class Kernel extends HttpKernel
         ],
 
         'api' => [
+//            自己定义中间件组
+            \App\Http\Middleware\AcceptHeader::class,
             'throttle:60,1',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],

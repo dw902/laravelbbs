@@ -5,6 +5,7 @@ return array(
     // 后台的 URI 入口
     'uri' => 'admin',
 
+
     // 后台专属域名，没有的话可以留空
     'domain' => '',
 
@@ -74,14 +75,15 @@ return array(
     // 设置后台主页视图文件，由 `use_dashboard` 选项决定
     'dashboard_view' => '',
 
-    // 用来作为后台主页的菜单条目，由 `use_dashboard` 选项决定，菜单指的是 `menu` 选项
-    'home_page' => 'users',
-
+    // 用来作为后台主页的菜单条目，由 `use_dashboard` 选项决定，菜单指的是 `menu` 选项首頁
+//    'home_page' => 'users',
+    'home_page' => 'topics',
     // 右上角『返回主站』按钮的链接
     'back_to_site_path' => '/',
 
     // 当选项 `permission` 权限检测不通过时，会重定向用户到此处设置的路径
-    'login_path' => 'login',
+    'login_path' => 'permission-denied',
+
 
     // 允许在登录成功后使用 Session::get('redirect') 将用户重定向到原本想要访问的后台页面
     'login_redirect_key' => 'redirect',

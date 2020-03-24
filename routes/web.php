@@ -14,8 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/', 'PagesController@root')->name('root');
-
+//Route::get('/', 'PagesController@root')->name('root');
+Route::get('/', 'TopicsController@index')->name('root');
 //Auth::routes();
 
 Auth::routes(['verify' => true]);
@@ -36,3 +36,5 @@ Route::post('upload_image', 'TopicsController@uploadImage')->name('topics.upload
 Route::resource('replies', 'RepliesController', ['only' => ['store', 'destroy']]);
 //通知路由器
 Route::resource('notifications', 'NotificationsController', ['only' => ['index']]);
+//無權縣訪問提醒
+Route::get('permission-denied', 'PagesController@permissionDenied')->name('permission-denied');
