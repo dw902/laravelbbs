@@ -60,7 +60,10 @@ Route::prefix('v1')
         Route::middleware('throttle:' . config('api.rate_limits.access'))
             ->group(function () {
                 // 游客可以访问的接口
-
+                // 话题列表，详情
+                Route::resource('topics', 'TopicsController')->only([
+                    'index', 'show'
+                ]);
                 // 某个用户的详情
                 Route::get('users/{user}', 'UsersController@show')
                     ->name('users.show');
@@ -69,6 +72,10 @@ Route::prefix('v1')
                     ->name('categories.index');
                 // 登录后可以访问的接口
                 Route::middleware('auth:api')->group(function() {
+                    // 发布话题
+                    Route::resource('topics', 'TopicsController')->only([
+                        'store', 'update', 'destroy'
+                    ]);
                     // 当前登录用户信息
                     Route::get('user', 'UsersController@me')
                         ->name('user.show');

@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4415c632-a80c-499e-94a6-5993de6f0ca3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CategoriesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/CategoryResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/TopicsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Api/TopicRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/TopicResource.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -200,7 +200,7 @@
       <workItem from="1584753286036" duration="33487000" />
       <workItem from="1584920975559" duration="5092000" />
       <workItem from="1584967958870" duration="5625000" />
-      <workItem from="1585005650335" duration="23654000" />
+      <workItem from="1585005650335" duration="24430000" />
     </task>
     <servers />
   </component>
