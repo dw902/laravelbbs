@@ -9,7 +9,8 @@ use Illuminate\Auth\MustVerifyEmail as MustVerifyEmailTrait;
 //邮件修改
 use Auth;
 use Spatie\Permission\Traits\HasRoles;
-class User extends Authenticatable implements MustVerifyEmailContract
+use Tymon\JWTAuth\Contracts\JWTSubject;
+class User extends Authenticatable implements MustVerifyEmailContract,JWTSubject
 
 
 {
@@ -21,8 +22,12 @@ class User extends Authenticatable implements MustVerifyEmailContract
     use Notifiable {
         notify as protected laravelNotify;
     }
+//    protected $fillable = [
+//        'name', 'phone', 'email', 'password', 'introduction', 'avatar',
+//    ];
     protected $fillable = [
         'name', 'phone', 'email', 'password', 'introduction', 'avatar',
+        'weixin_openid', 'weixin_unionid'
     ];
     public function setAvatarAttribute($path)
     {
@@ -91,5 +96,14 @@ class User extends Authenticatable implements MustVerifyEmailContract
         $this->notification_count = 0;
         $this->save();
         $this->unreadNotifications->markAsRead();
+    }
+    public function getJWTIdentifier()
+    {
+        return $this->getKey();
+    }
+
+    public function getJWTCustomClaims()
+    {
+        return [];
     }
 }
