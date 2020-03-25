@@ -29,6 +29,9 @@ class User extends Authenticatable implements MustVerifyEmailContract,JWTSubject
         'name', 'phone', 'email', 'password', 'introduction', 'avatar',
         'weixin_openid', 'weixin_unionid'
     ];
+    protected $hidden = [
+        'password', 'remember_token', 'weixin_openid', 'weixin_unionid'
+    ];
     public function setAvatarAttribute($path)
     {
         // 如果不是 `http` 子串开头，那就是从后台上传的，需要补全 URL
@@ -70,9 +73,9 @@ class User extends Authenticatable implements MustVerifyEmailContract,JWTSubject
 //        'name', 'email', 'password','introduction','avatar',
 //    ];
 
-    protected $hidden = [
-        'password', 'remember_token',
-    ];
+//    protected $hidden = [
+//        'password', 'remember_token',
+//    ];
 
     protected $casts = [
         'email_verified_at' => 'datetime',
