@@ -79,6 +79,9 @@ Route::prefix('v1')
                     // 当前登录用户信息
                     Route::get('user', 'UsersController@me')
                         ->name('user.me');
+                    // 发布回复
+                    Route::post('topics/{topic}/replies', 'RepliesController@store')
+                        ->name('topics.replies.store');
                     // 编辑登录用户信息
                     Route::patch('user', 'UsersController@update')
                         ->name('user.update');
