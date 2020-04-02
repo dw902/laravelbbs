@@ -95,6 +95,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/socialiteproviders/manager" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/socialiteproviders/weixin" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/spatie/laravel-permission" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/spatie/laravel-query-builder" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/summerblue/administrator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/summerblue/generator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/summerblue/laravel-active" />

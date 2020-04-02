@@ -100,11 +100,12 @@ class User extends Authenticatable implements MustVerifyEmailContract,JWTSubject
         $this->save();
         $this->unreadNotifications->markAsRead();
     }
+//    定义返回id
     public function getJWTIdentifier()
     {
         return $this->getKey();
     }
-
+//定义多余的在荷载中的数据
     public function getJWTCustomClaims()
     {
         return [];
