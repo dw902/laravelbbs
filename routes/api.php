@@ -82,6 +82,9 @@ Route::prefix('v1')
                     // 发布回复
                     Route::post('topics/{topic}/replies', 'RepliesController@store')
                         ->name('topics.replies.store');
+                    // 删除回复
+                    Route::delete('topics/{topic}/replies/{reply}', 'RepliesController@destroy')
+                        ->name('topics.replies.destroy');
                     // 编辑登录用户信息
                     Route::patch('user', 'UsersController@update')
                         ->name('user.update');
