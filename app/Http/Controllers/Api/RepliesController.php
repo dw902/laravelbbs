@@ -10,6 +10,12 @@ use App\Http\Requests\Api\ReplyRequest;
 
 class RepliesController extends Controller
 {
+    public function index(Topic $topic)
+    {
+        $replies = $topic->replies()->paginate();
+
+        return ReplyResource::collection($replies);
+    }
     public function store(ReplyRequest $request, Topic $topic, Reply $reply)
     {
         $reply->content = $request->content;

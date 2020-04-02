@@ -70,6 +70,13 @@ Route::prefix('v1')
                 // 分类列表
                 Route::get('categories', 'CategoriesController@index')
                     ->name('categories.index');
+                // 话题列表，详情
+                Route::resource('topics', 'TopicsController')->only([
+                    'index', 'show'
+                ]);
+                // 话题回复列表
+                Route::get('topics/{topic}/replies', 'RepliesController@index')
+                    ->name('topics.replies.index');
                 // 登录后可以访问的接口
                 Route::middleware('auth:api')->group(function() {
                     // 发布话题
@@ -85,6 +92,9 @@ Route::prefix('v1')
                     // 删除回复
                     Route::delete('topics/{topic}/replies/{reply}', 'RepliesController@destroy')
                         ->name('topics.replies.destroy');
+                    // 通知列表
+                    Route::get('notifications', 'NotificationsController@index')
+                        ->name('notifications.index');
                     // 编辑登录用户信息
                     Route::patch('user', 'UsersController@update')
                         ->name('user.update');
